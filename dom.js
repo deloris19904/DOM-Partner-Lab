@@ -8,7 +8,7 @@ for (let i=0; i<listItems.length; i++) {
 
 //Part 1 Problem 2 
 
-let userPrompt = prompt("Enter logo size small or large.")
+/*let userPrompt = prompt("Enter logo size small or large.")
 let logo = document.getElementById('logo')
 if(userPrompt == "small"){
     logo.setAttribute('width', "400")
@@ -16,4 +16,18 @@ if(userPrompt == "small"){
 } else if (userPrompt == "large") {
     logo.setAttribute("width", "800")
     logo.setAttribute("height", "500")
-}
+}*/
+//Part 1 Problem 3
+
+let userColor=prompt("Pick a color: Red, Blue or Yellow.")
+let body = document.getElementsByTagName("body")
+if (userColor == "red"){
+    body[0].style.backgroundColor="red"
+    
+} else if (userColor == "blue"){
+    body[0].style.backgroundColor="blue"
+    
+} else if (userColor == "yellow"){
+    body[0].style.backgroundColor="yellow"
+    
+} 
