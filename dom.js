@@ -32,6 +32,13 @@ if (userColor == "red"){
     body[0].style.backgroundColor="yellow"
     
 } 
+// //Part 1 Problem 4
+
+for(i = 0; i < 5; i++){
+    let team1=prompt("Team member name");
+    teamList[i].textContent = team1;
+}
+
 // Prompt the user for their name and create a header the
  // say's `<user's name>'s Resume!` eg. `Kaleb's Resume!`. 
  // You should use the DOM to create a new element, not to update 
