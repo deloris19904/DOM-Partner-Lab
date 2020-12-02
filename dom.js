@@ -17,7 +17,10 @@ if(userPrompt == "small"){
     logo.setAttribute("width", "800")
     logo.setAttribute("height", "500")
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> a08fdc372189c86a7fd01ce5557e0ad0389c22b8
 //Part 1 Problem 3
 
 let userColor=prompt("Pick a color: Red, Blue or Yellow.")
@@ -32,7 +35,8 @@ if (userColor == "red"){
     body[0].style.backgroundColor="yellow"
     
 } 
-// //Part 1 Problem 4
+
+//Part 1 Problem 4
 
 for(i = 0; i < 5; i++){
     let team1=prompt("Team member name");
