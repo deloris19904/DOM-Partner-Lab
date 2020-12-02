@@ -17,10 +17,6 @@ if(userPrompt == "small"){
     logo.setAttribute("width", "800")
     logo.setAttribute("height", "500")
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> a08fdc372189c86a7fd01ce5557e0ad0389c22b8
 //Part 1 Problem 3
 
 let userColor=prompt("Pick a color: Red, Blue or Yellow.")
@@ -38,15 +34,10 @@ if (userColor == "red"){
 
 //Part 1 Problem 4
 
-for(i = 0; i < 5; i++){
-    let team1=prompt("Team member name");
-    teamList[i].textContent = team1;
-}
-
-// Prompt the user for their name and create a header the
- // say's `<user's name>'s Resume!` eg. `Kaleb's Resume!`. 
- // You should use the DOM to create a new element, not to update 
-// an existing element.
+// for(i = 0; i < 5; i++){
+//     let team1=prompt("Team member name");
+//     teamList[i].textContent = team1;
+// }
 
 // Part 2 Problem 1
 let userName=prompt("Please Enter Your Name")
@@ -58,7 +49,24 @@ function headerCreate(userName){
 }
 headerCreate(userName)
 
+//Part 2 Problem 2
 
+let array = ["html", "css", "javascript", "java"]
+let userInput = prompt("How would you like the list displayed? Ordered or Unordered?")
+let list
+if(userInput == "ordered"){
+    list = document.createElement("ol")   
+} else if(userInput == "unordered"){
+    list = document.createElement("ul")
+}
+
+for (let i = 0; i < array.length; i++) {
+    let li = document.createElement("li")
+    let liText = document.createTextNode(array[i])
+    li.appendChild(liText)
+    list.appendChild(li)
+}
+document.body.appendChild(list)
 
 
 
