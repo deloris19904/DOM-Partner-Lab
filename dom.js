@@ -66,7 +66,27 @@ for (let i = 0; i < array.length; i++) {
     li.appendChild(liText)
     list.appendChild(li)
 }
+
 document.body.appendChild(list)
+
+// 3. Prompt the user for a number and 
+// remove that skill from their
+// list of skills.
+//let array = ["html", "css", "javascript", "java"]
+//Part 2 problem 3
+
+let userNum= prompt("Pick a number 1 - 4.")
+let index = userPrompt - 1;
+let children=list.childNodes
+children[index].remove()
+
+
+
+
+
+
+
+
 
 
 
